@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'NumberStuff.MainClass'
+jar {
+    archiveBaseName = 'APP'
+    archiveVersion =  '0.1.0'
+    manifest {
+        attributes(
+
+                'Main-Class': 'NumberStuff.MainClass'
+        )
+    }
+}
